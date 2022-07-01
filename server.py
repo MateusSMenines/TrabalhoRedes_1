@@ -20,7 +20,7 @@ if __name__ == '__main__':
     np.set_printoptions(formatter={'float': '{: 0.3f}'.format})
 
     ip_server = '' 
-    ip_consume = ''
+    ip_consume = sys.argv[1]
     PORT_server = 5000
     PORT_consume = 7000
     tcp_server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

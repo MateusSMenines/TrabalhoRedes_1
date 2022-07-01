@@ -2,11 +2,12 @@ import socket
 import numpy as np
 import time
 import pickle
+import sys
 
 
 if __name__ == '__main__':
 
-    HOST = ''
+    HOST = sys.argv[1]
     PORT = 5000
     tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     dest = (HOST, PORT)
