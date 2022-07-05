@@ -8,7 +8,7 @@ import sys
 if __name__ == '__main__':
 
     HOST = sys.argv[1]
-    PORT = 5000
+    PORT = 20000
     tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     dest = (HOST, PORT)
 
@@ -34,7 +34,7 @@ if __name__ == '__main__':
          
                 list = pickle.dumps([M[i,j], 0])
                 tcp.send(list)
-                time.sleep(0.0001)
+                time.sleep(0.005)
         
         print(M)
         print("Matriz {} criada".format(x+1))
