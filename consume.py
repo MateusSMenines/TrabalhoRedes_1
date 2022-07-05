@@ -5,7 +5,7 @@ import sys
 
 if __name__ == '__main__':
 
-    ip_server = sys.argv[1]
+    ip_server = ''
     PORT_server = 7000
     tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     orig = (ip_server, PORT_server)
